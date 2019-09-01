@@ -24,30 +24,40 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [X] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+ReactJs is an open source JavaScript library that is based around the idea of reusable components. ReactJs attempts to solve scalability issues by breaking down the website or application into single, reusable design components. In this way a team of developers can easily build out individual components which are later import to one master file and then automatically rendered to the DOM. 
 
-- [ ] Describe state.
+- [X] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+To think in react is to adopt a modular way of thinking. React is very modular in the way it allows one to program features of an application in separate modules or components as opposed to trying to style a single HTML element in a separate CSS file and program its functionality in a separate JS file. So to think in react one must start to develop projects with a “component-first” mindset.
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [X] Describe state.
+
+State is any data coming into or being manipulated by your component. Most often this is data that will change over time and needs to either be tracked or manipulated as it changes. For most cases, the change in data or state will have to be updated on the DOM. For example, if I were building an app that tracked user reviews of a product and on every user posted review there was a “like” button and an “dislike” button, we would say that this review component held two possible states. If you were to click either button, you would be changing the state. 
+
+- [X] Describe props.
+
+Props help us pass data held in state from one component to another without changing or altering the state. For example, if you had data returned from an API request held in state, you would use props to pass it to multiple components and data files. Props pass data one-way, down the tree, from the parent component to the children. Props makes our job as programmers easier in a few ways; props give us more control over what is displayed and how it works; props make our code more organized a readable; props make it easier to find problems and debug code; props make our code reusable and able to pass nearly any data to it.
+
+- [X] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+A side effect can be considered anything that affects something outside the scope of the function being executed. Some examples of side effects include, making API request, logging to the console, or even manually manipulating the DOM. In order to sync your side effects with changes in state or props is by using the effect hook. The effect hook tells React that a certain component needs to execute a side effect. The effect hook takes in two parameters, the second of which is an empty array which tells React to run this side effect only once when the component mounts, or else the side effect will run every time the component renders.
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on Github.
+- [X] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [X] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [X] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [X] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
+- [X] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Implement the project on this Branch, **committing progress & changes often.**
+- [X] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
