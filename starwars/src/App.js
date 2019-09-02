@@ -27,8 +27,7 @@ const [data, setData] = useState([])
       {data.map(data => 
       <CharacterCard name={data.name}  
                                   gender={data.gender}
-                                  homeworld={data.homeworld} 
-                                  
+
                                   />
                                    )}
       
