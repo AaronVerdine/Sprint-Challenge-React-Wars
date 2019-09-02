@@ -1,15 +1,16 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
-import '
+import { Card, Image } from 'semantic-ui-react';
+import '../App.scss';
 
 function CharacterCard(props) {
 console.log(props)
 
     return (
         <Card className="card-stylz">
-             <h2>{props.name}</h2>
+        <Image src="http://placekitten.com/200/300" alt="random kitties" />
+             <Card.Header className="content-stylz">{props.name}</Card.Header>
                  <h3>{props.gender}</h3>
-                    <img src="http://placekitten.com/200/300" alt="random kitties" />
+                    
         </Card>
        
     )
