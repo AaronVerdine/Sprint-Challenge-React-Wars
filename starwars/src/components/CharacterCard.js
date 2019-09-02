@@ -1,13 +1,15 @@
 import React from 'react';
 
 function CharacterCard(props) {
-
+console.log(props)
 
     return (
-        <div>The force will be with you...always
-             <h2>Name of Character</h2>
-                 <h3>Character Gender</h3>
-                    <img src="https://swapi.co/api/planets/1/"/>
+        <div>
+             <h2>{props.name}</h2>
+                 <h3>{props.gender}</h3>
+                    <img src="http://placekitten.com/200/300" alt="random kitties" />
+                   
+
         
         </div>
        
