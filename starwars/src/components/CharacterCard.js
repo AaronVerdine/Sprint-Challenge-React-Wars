@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
-import '../App.scss';
+import './CharacterCard.scss';
 
 function CharacterCard(props) {
 console.log(props)

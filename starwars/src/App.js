@@ -24,12 +24,15 @@ const [data, setData] = useState([])
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <div className="data-cards">
       {data.map(data => 
       <CharacterCard name={data.name}  
                                   gender={data.gender}
 
                                   />
                                    )}
+      </div>
+      
       
     </div>
   );
